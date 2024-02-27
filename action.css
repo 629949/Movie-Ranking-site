@@ -1,0 +1,79 @@
+body {
+    background-color: black;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: white;
+    flex-direction: column;
+    display: flex;
+    background-attachment: fixed;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url(wp13340698-blur-white-wallpapers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.countdown {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 150px;
+    padding: 0;
+    flex-direction: column;
+    width: 800px;
+    
+}
+
+img {
+    width: 80%;
+    overflow: hidden;
+    display: block;
+    margin-top: 20px;
+   height: 220px;
+}
+
+li {
+    border-bottom: 1px solid white;
+    display: inline-block;
+    color: rgb(249, 249, 243);
+    border-radius: 2%;
+    width: 600px;
+}
+.button {
+    display: flex;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #1fb34b;
+    color: #371e0c72;
+    border-radius: 5px;
+    font-weight: bold;
+    height: 50px;
+    float: right;
+    margin-bottom: 10px;
+    font-size: larger;
+    align-self: center;
+}
+
+.button:hover {
+    background-color:  #575e0a;
+}
+
+button {
+    display: flex;
+    padding: 20px 20px;
+    text-decoration: none;
+    background-color: #d3c611;
+    color: #371e0c72;
+    border-radius: 5px;
+    font-weight: bold;
+    height: 30px;
+    float: right;
+    margin-bottom: 20px;
+    font-size: larger;
+    height: 50px;
+   
+}
+
+button:hover {
+    background-color:  #575e0a;
+}
