@@ -2,146 +2,175 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background-color: #0e0f2e;
+    background-color: #000000;
     color: white;
     flex-direction: column;
     display: flex;
-    background-attachment: fixed;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     align-items: center;
-
-    
+    scroll-behavior: smooth;
 }
 
-/* add the background color*/
+/* look for an icon for the cinema*/
 header {
-    align-content: center;
+    align-items:center;
     display: flex;
-    position: fixed;
     width: 100%;
-    margin-bottom: 20px;
-   
+    height: 50px;
+    justify-content: space-around; 
+    position: fixed;
+
+}
+/* in the heading */
+header h1 {
+    font-size: larger;
+    border: 1px solid yellow;
+    border-radius: 8px;
+    background-color: #00909E;
+}
+
+/* for the navigation*/
+.navigation button {
+    background-color: transparent;
+    outline: none;
+    color: white;
+    width: 28%;
+    margin-left: 5px;
+    border-radius: 7px;
+    border-style: none;
+    font-size: large;
+    padding: 15px;
 }
 
 
-/* center the items */
+/* the main content */
 main {
     box-sizing: border-box;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 0;
     padding: 0;
     flex-direction: column;
     align-items: center;
-    margin-top: 120px;   
+    margin-top: 2px;  
+    width: 80%;
+    border-radius: 7px;
 }
 
-.middle {
-    background-color: #292C6D;
-    width: 800px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
-    border-bottom: 20px;
-    justify-content: space-between;
-}
-/* resize the images */
-/*should be tranparent*/
-.about {
-    box-sizing: border-box;
-    border: 1px solid white;
-    height: 320px;
-    width: 50%;
-    border-radius: 3%;
-    margin-top: 5px;
-    background-color: #FAEDF0;
-    color: rgb(38, 11, 11);
-    justify-content: space-between;
-    color: black;
-    text-align: center;
-}
-
-/* make sure they fit*/
-.about img {
-    width: 30%;
-    overflow: hidden;
-    display: inline-block;
-   margin-left: 9px;
-   border-radius: 7px;
-   height: 120px;
-   flex-direction: row;
-   margin-top: 10px;
-}
-
-.info {
-    margin-top: 20px;
-    width: 50%;
-    height: 50px;
+/* where the picture is*/
+.picture {
+    width: 100%;
+    background-image: url(images/wp13593916-badland-hunters-2024-wallpapers.jpg);
+    height: 400px;
     background-size: cover;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: larger;
-    color: aqua;
+    display: flex;
+    border-radius: 8px;
 }
-.container {
+
+/* the badland description*/
+.badland {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
+    width: 50%;
+    margin-top: 150px;
+    margin-left: 10px;
+}
+
+/* for the background-picture */
+.badland h2 {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+/* the budland button*/
+.badland button {
+    background-color: #142850;
+    outline: 1px solid black;
+    color: white;
+    width: 150px;
+    margin-left: 280px;
+    border-radius: 7px;
+    border-style: none;
+    font-size: large;
+    padding: 20px;
+    float: right;
+    border: 2px green;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+/* the main work */
+.middle {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-around;
-    height: 700px;
-    align-content: center;
-    flex-wrap: wrap;
-    width: 700px;
-
-
-}
-
-.button {
-    display: flex;
-    padding: 10px 20px;
-    text-decoration: none;
-    background-color: #d0cb30;
-    color: #0c7f7d72;
-    border-radius: 5px;
-    font-weight: bold;
-    height: 50px;
-    float: right;
-    font-size: larger;
-}
-
-.button:hover {
-    background-color:  #575e0a;
-}
-
-.picture img {
-    height:250px;
-    width: 550px;
-    border-radius: 15px;
-    padding: 5px;
     align-items: center;
-    margin-top: 20px;
+    justify-content: center;
 }
+
+/* movie tiles */
+.collection{
+    width: 100%;
+    display: flex;
+}
+
+/* movie images */
+.collection img{
+    height: 190px;
+    margin: 10px;
+    border-radius: 7px;
+}
+
+/*for the genres */
+div .genre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* for the guys in the genres */
+.genre img{
+    height: 190px;
+    margin: 10px;
+    border-radius: 7px;
+}
+
+.genre div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.genre div:hover {
+    background-color: #2980b9;
+  }
+
 
 .footer {
     width: 100%;
     background-color: #FAEDF0;
     height: 80px;
     color: black;
-    margin-top: 20px;
+    margin-top: 90px;
     border-radius: 5px;
+    justify-content: baseline;
+    align-items: center;
 }
 
-.colection  img {
-    box-sizing: border-box;
-    margin-top: 20px;
-    width: 44px;
-    height: 70px;
-}
 
-h3 {
-    border-bottom: 1px solid black;
+.middle h3 {
+    border-bottom: 1px solid whitesmoke;
     width: 90px;
     margin-left: 50px;
 }
