@@ -30,16 +30,18 @@ header h1 {
 }
 
 /* for the navigation*/
-.navigation button {
+.navigation a {
     background-color: transparent;
     outline: none;
     color: white;
     width: 28%;
-    margin-left: 5px;
+    margin-left: 15px;
     border-radius: 7px;
     border-style: none;
     font-size: large;
     padding: 15px;
+    gap: 30px;
+
 }
 
 
@@ -53,10 +55,28 @@ main {
     flex-direction: column;
     align-items: center;
     margin-top: 2px;  
-    width: 80%;
     border-radius: 7px;
 }
 
+.about {
+    margin-top: 30px;
+    color: darkgoldenrod;
+    font-weight: 900px;
+    font-size: larger;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-wrap: wrap;
+    width: 100%;
+   font-size: x-large;
+   border: 1px solid green;
+}
+
+.about p {
+    align-items: center;
+    justify-content: center;
+   
+}
 /* where the picture is*/
 .picture {
     width: 100%;
@@ -65,6 +85,7 @@ main {
     background-size: cover;
     display: flex;
     border-radius: 8px;
+    margin-top: 30px;
 }
 
 /* the badland description*/
@@ -118,9 +139,12 @@ main {
 }
 
 /* movie tiles */
-.collection{
+.collection {
     width: 100%;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+border: 1px solid white;
 }
 
 /* movie images */
@@ -157,6 +181,34 @@ div .genre {
   }
 
 
+.middle h3 {
+    border-bottom: 1px solid whitesmoke;
+    width: 90px;
+    margin-left: 50px;
+}
+
+.upcoming {
+border: 1px solid red;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.upcoming div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+.upcoming img {
+    height: 180px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    width: 140px
+}
+
 .footer {
     width: 100%;
     background-color: #FAEDF0;
@@ -166,11 +218,4 @@ div .genre {
     border-radius: 5px;
     justify-content: baseline;
     align-items: center;
-}
-
-
-.middle h3 {
-    border-bottom: 1px solid whitesmoke;
-    width: 90px;
-    margin-left: 50px;
 }
