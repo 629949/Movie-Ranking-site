@@ -134,11 +134,12 @@ main {
 /* the main work */
 .middle {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
 }
 
 /* movie tiles */
@@ -149,6 +150,9 @@ main {
     align-items: center;
 }
 
+.main {
+    width: 100%;
+}
 /* movie images */
 .collection img{
     height: 190px;
@@ -173,11 +177,20 @@ main {
 }
 
 /*for the genres */
-div .genre {
+.pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.genre {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    width: 100%;
+    border: 1px solid blue;
 }
 
 /* for the guys in the genres */
@@ -192,17 +205,31 @@ div .genre {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
 }
 
 .genre div:hover {
     background-color: #2980b9;
+
   }
 
+.genre h4 {
+    color: white;
+    border: 1px solid green;
+    background-color: green;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
 
 .middle h3 {
     border-bottom: 1px solid whitesmoke;
-    width: 90px;
-    margin-left: 50px;
+    width: 100px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .upcoming {
