@@ -56,6 +56,7 @@ main {
     align-items: center;
     margin-top: 2px;  
     border-radius: 7px;
+    width: 100%;
 }
 
 .about {
@@ -127,6 +128,7 @@ main {
     text-align: center;
     margin-right: 5px;
     margin-bottom: 10px;
+    display: flex;
 }
 
 /* the main work */
@@ -136,6 +138,7 @@ main {
     padding: 0;
     align-items: center;
     justify-content: center;
+    width: 90%;
 }
 
 /* movie tiles */
@@ -144,7 +147,6 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-border: 1px solid white;
 }
 
 /* movie images */
@@ -152,6 +154,22 @@ border: 1px solid white;
     height: 190px;
     margin: 10px;
     border-radius: 7px;
+}
+
+.collection p {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-decoration-style: none;
+    color: white;
+    border: 1px solid green;
+    border-radius: 5px;
+    background-color: green;
+}
+
+.collection a:hover {
+    background-color: aqua;
+    border-radius: 5px;
 }
 
 /*for the genres */
