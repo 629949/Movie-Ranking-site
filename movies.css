@@ -19,6 +19,7 @@ header {
     height: 50px;
     justify-content: space-around; 
     position: fixed;
+    background-color: grey;
 
 }
 /* in the heading */
@@ -232,11 +233,18 @@ main {
     align-items: center;
 }
 
+.new{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
 .upcoming {
 border: 1px solid red;
 display: flex;
-justify-content: center;
+justify-content: space-evenly;
 align-items: center;
+width: 100%;
 }
 
 .upcoming div {
@@ -254,13 +262,21 @@ align-items: center;
     width: 140px
 }
 
-.footer {
-    width: 100%;
-    background-color: #FAEDF0;
-    height: 80px;
-    color: black;
-    margin-top: 90px;
+.upcoming h4 {
+    display: flex;
+    border: 1px solid green;
     border-radius: 5px;
-    justify-content: baseline;
+    background-color: green;
+    width: 150px;
+    justify-content: center;
     align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    width: 100%;
 }
