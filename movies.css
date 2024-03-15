@@ -163,8 +163,19 @@ main {
 
 }
 
-.main {
+.main1 {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main1 h3 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 /* movie images */
 .collection img{
