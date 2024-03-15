@@ -16,67 +16,233 @@ body {
 /*countdown section*/
 header {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     width: 100%;
     align-items: center;
     justify-content: center;
     border: 1px solid white;
     display: flex;
+    background-color: grey;
+    position: fixed;
 }
 
+.pages  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: row;
+    width: 100%;
+    gap: 55px;
+}
+
+.pages a {
+    text-decoration: none;
+    border: 1px solid red;
+    width: 90px;
+    border-radius: 5px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: greenyellow;
+}
 main {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin-top: 70px;
 }
 .countdown {
-    border: 1px solid green;
+    
 box-sizing: border-box;
-margin: 0;
+margin: 10px;
 padding: 0;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
- width: 55%; 
+ width: 90%; 
 
 }
-
-section div {
-    display: flex;
-    margin: 0;
-    padding: 0;
+.turismo {
     box-sizing: border-box;
-    justify-content: center;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-}
-img {
-    width: 80%;
-    overflow: hidden;
-    display: block;
-    margin-top: 20px;
-   height: 220px;
+    flex-direction: row;
+    
 }
 
-li {
-    border-bottom: 1px solid white;
-    display: inline-block;
-    color: rgb(249, 249, 243);
-    border-radius: 2%;
-    width: 600px;
+.gran {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+     align-items: center;
+     flex-direction: column;
+     text-align: left;
+     width: 60%;
 }
+
+.gran h2 {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    color: yellow;
+}
+
+.turismo img{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 250px;
+}
+.pacific {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px;
+}
+.pacific img{
+    display: flex;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.pacific div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+}
+
+.pacific h2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    color: yellow;
+}
+
+.transformers{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px;
+}
+.transformers img{
+    display: flex;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    border-radius: 5px;
+    width: 250px;
+   
+    
+}
+
+.transformers div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+}
+
+.transformers h2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    color: yellow;
+}
+
+.avengers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.avengers img {
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 270px;
+   
+}
+
+.avengers div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+}
+
+.avengers h2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    color: yellow;
+}
+
+.mission {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.mission img {
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width: 270px;
+}
+
+.mission div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+}
+
+.mission h2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    color: yellow;
+}
+
 .button {
     display: flex;
     padding: 10px 20px;
     text-decoration: none;
     background-color: #1fb34b;
     color: #371e0c72;
-    border-radius: 5px;
+    border-radius: 10px;
     font-weight: bold;
     height: 50px;
     float: right;
@@ -102,7 +268,8 @@ button {
     margin-bottom: 20px;
     font-size: larger;
     height: 50px;
-   
+    align-items: center;
+    justify-content: center;
 }
 
 button:hover {
