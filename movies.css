@@ -2,7 +2,7 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background-color: #000000;
+    background-color: #070F2B;
     color: white;
     flex-direction: column;
     display: flex;
@@ -28,6 +28,11 @@ header h1 {
     border: 1px solid yellow;
     border-radius: 8px;
     background-color: #00909E;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
 }
 
 /* for the navigation*/
@@ -42,10 +47,12 @@ header h1 {
     font-size: large;
     padding: 15px;
     gap: 30px;
-
+    
 }
 
-
+.navigation a:hover {
+    color: yellow;
+}
 /* the main content */
 main {
     box-sizing: border-box;
@@ -61,6 +68,7 @@ main {
 }
 
 .about {
+    display: flex;
     margin-top: 30px;
     color: darkgoldenrod;
     font-weight: 900px;
@@ -71,7 +79,7 @@ main {
     text-wrap: wrap;
     width: 100%;
    font-size: x-large;
-   border: 1px solid green;
+
 }
 
 .about p {
@@ -130,6 +138,7 @@ main {
     margin-right: 5px;
     margin-bottom: 10px;
     display: flex;
+    align-items: center;
 }
 
 /* the main work */
@@ -145,10 +154,13 @@ main {
 
 /* movie tiles */
 .collection {
-    width: 100%;
+    width: 90%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    margin: 40px;
+    flex-direction: row;
+
 }
 
 .main {
@@ -170,8 +182,16 @@ main {
     border: 1px solid green;
     border-radius: 5px;
     background-color: green;
+    width: 140px;
 }
 
+.collection a {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+}
 .collection a:hover {
     background-color: aqua;
     border-radius: 5px;
@@ -191,7 +211,6 @@ main {
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    border: 1px solid blue;
 }
 
 /* for the guys in the genres */
@@ -216,7 +235,7 @@ main {
 
 .genre h4 {
     color: white;
-    border: 1px solid green;
+    
     background-color: green;
     width: 100px;
     display: flex;
@@ -226,7 +245,7 @@ main {
 }
 
 .middle h3 {
-    border-bottom: 1px solid whitesmoke;
+   
     width: 100px ;
     display: flex;
     justify-content: center;
@@ -240,7 +259,6 @@ main {
     width: 100%;
 }
 .upcoming {
-border: 1px solid red;
 display: flex;
 justify-content: space-evenly;
 align-items: center;
