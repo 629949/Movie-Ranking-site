@@ -3,7 +3,7 @@ body {
     padding: 0;
     margin: 0;
     width: auto;
-    background-color: #99DBF5;
+    background-color: #010514e9;
     color: white;
     display: flex;
     flex-direction: column;
@@ -45,13 +45,13 @@ header h1 {
 }
 
 /* for the navigation*/
-.navigation {
+.navbar {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 5px;
 }
-.navigation a {
+.navbar a {
     background-color: transparent;
     outline: none;
     color: black;
@@ -65,7 +65,7 @@ header h1 {
     font-weight: bold;
 }
 
-.navigation a:hover {
+.navbar a:hover {
     color: lightgreen;
 }
 /* the main content */
@@ -169,6 +169,10 @@ main {
 
 }
 
+h3 {
+    color: orange;
+}
+
 /* movie tiles */
 .collection {
     width: 70%;
@@ -177,9 +181,9 @@ main {
     align-items: center;
     margin: 40px;
     flex-direction: row;
-    overflow: auto;
     scroll-behavior: smooth;
     white-space: noWrap;
+    margin-top: 0;
 }
 
 .main1 {
@@ -201,18 +205,19 @@ main {
     height: 190px;
     margin: 10px;
     border-radius: 7px;
+    margin-bottom: 0;
 }
 
 .collection p {
     justify-content: center;
     align-items: center;
     display: flex;
-    text-decoration-style: none;
+    text-decoration: none;
     color: white;
     border: 1px solid green;
     border-radius: 5px;
-    background-color: green;
     width: 140px;
+    margin-top: 0;
 }
 
 .collection a {
@@ -220,11 +225,15 @@ main {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-
+    text-decoration: none;
+    background-color: #020917;
+    flex-wrap: wrap;
+    
 }
 .collection a:hover {
-    background-color: aqua;
+   border: 2px solid #142850;
     border-radius: 5px;
+    
 }
 
 /*for the genres */
@@ -239,8 +248,8 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: space-around;
+    width: 80%;
 }
 
 /* for the guys in the genres */
